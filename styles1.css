@@ -29,7 +29,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #040404;
+    background-color: #000000;
     z-index: 99;
   }
   
@@ -169,7 +169,7 @@
   }
   
   .image {
-    display: grid;
+    display: flex;
     place-items: center;
   }
   
