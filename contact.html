@@ -14,7 +14,7 @@
   <body>
     <nav>
       <div class="nav__content">
-        <div class="logo"><a href="#">Max Garcia-Andrews</a></div>
+        <div class="logo"><a href="index.html">Max Garcia-Andrews</a></div>
         <label for="check" class="checkbox">
           <i class="ri-menu-line"></i>
         </label>
@@ -32,17 +32,26 @@
         <div class="content">
           <p class="subtitle"></p>
           <h1 class="title">
-            Max Garcia-Andrews
+            CONTACT
           </h1>
-          <p class="description">
-            Emerging film and media composer 
-          </p>
           <div class="action__btns">
-            <button onclick="" class="hire__me">Music</button>
-            <button class="portfolio">Contact</button>
+            <button onclick="window.location.href='mailto:maxgandrews10@gmail.com'" class="hire__me">Email</button>
+            <button target="_blank" onclick="openLinkedIn()">LinkedIn</button>
+            <script>
+              function openLinkedIn() {
+                window.open('https://www.linkedin.com/in/max-garcia-andrews-5143ab283', '_blank');
+              }
+            </script>
+            <button target="_blank" onclick="openInstagram()">Instagram</button>
+            <script>
+              function openInstagram() {
+                window.open('https://www.instagram.com/maxgarciamusic_/', '_blank');
+              }
+            </script>
           </div>
         </div>
         <div class="image">
+          <img src="IMG_3764.jpg" alt="profile">
 
         </div>
       </div>
