@@ -93,13 +93,10 @@
   }
   
   .section__container {
-    min-height: 100vh;
-    max-width: var(--max-width);
-    margin: auto;
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
   }
 
   .video-container {
