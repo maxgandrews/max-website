@@ -137,6 +137,8 @@
   .action__btns {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .action__btns button {
@@ -175,11 +177,14 @@
   }
   
   .image img {
-    width: min(200rem, 100%);
+    max-width: 100%;
+    height: auto;
     border-radius: 1%;
+    display: block;
+    border: 1px solid #ffffff;
   }
   
-  @media (width < 750px) {
+  @media (max-width: 750px) {
     nav .checkbox {
       display: block;
     }
@@ -207,7 +212,8 @@
     .section__container {
       padding: 10rem 1rem 5rem 1rem;
       text-align: center;
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: 1fr;
+      gap: 2rem;
     }
   
     .image {
@@ -215,6 +221,11 @@
     }
   
     .action__btns {
-      margin: auto;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .action__btns button {
+      width: 100%;
     }
 }
